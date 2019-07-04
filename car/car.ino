@@ -7,9 +7,7 @@ void setup()
   
   Serial.begin(9600);
 }
-
 int income=0;
-
 void loop() {
   // put your main code here, to run repeatedly:
   if(Serial.available()>0)
@@ -37,7 +35,6 @@ void loop() {
     }
     }
 }
-
 void forward()
 {
   digitalWrite(5 , HIGH);
@@ -45,7 +42,6 @@ void forward()
   digitalWrite(9 , HIGH);
   digitalWrite(10, LOW );
   }
-
 void back()
 {
   digitalWrite(5 , LOW );
@@ -53,7 +49,6 @@ void back()
   digitalWrite(9 , LOW );
   digitalWrite(10, HIGH);
   }
-  
 void left()
 {
   digitalWrite(5 , HIGH);
@@ -61,7 +56,6 @@ void left()
   digitalWrite(9 , LOW );
   digitalWrite(10, HIGH);
   }
-
 void right()
 {
   digitalWrite(5 , LOW );
@@ -69,7 +63,6 @@ void right()
   digitalWrite(9 , HIGH);
   digitalWrite(10, LOW );
   }
-
 void stoped()
 {
   digitalWrite(5 , LOW );
